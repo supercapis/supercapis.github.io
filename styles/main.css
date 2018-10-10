@@ -31,11 +31,11 @@ header, footer, footer a {
 }
 
 header img {
-    width: auto;
-    height: auto;
+    width: 220;
+    height: 200;
     float: right;
 }
 
 footer {
-    font-size: 2rem;
+    font-size: 1rem;
 }
