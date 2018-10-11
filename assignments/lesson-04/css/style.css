@@ -12,6 +12,7 @@ header {
 
 header > img{
     width: 150px;
+    padding: 1.2rem 4rem;
     height: auto;
     vertical-align: middle;
 }
@@ -34,12 +35,13 @@ header > img{
 .currentconditions {
     display: inline-block;
     margin: 1rem 0 1rem 5rem;
-    padding: 1.2rem;
+    padding: 1.2rem 4rem;
     vertical-align: middle;
     color: #fff;
-    background-color: rgba(0,87,25.75);
-    border: 1pt solid rgba(0,87,25.1);
+    background-color: rgb(2, 49, 15);
+    border: 1pt solid rgb(9, 10, 10);
     font-size: 1.1rem;
+    box-shadow: 5px 10px 5px rgb(9, 10, 10);
 }
 
 .currentconditions img {
