@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: rgba(0,87,25,.5);
+    background-color: blue;
     text-align:center;
     padding: .5rem;
     color:#fff;
@@ -27,8 +27,8 @@ header > img{
 }
 
 .subheading {
-    font-size: 1.1rem;
-    color: rgba(0,87,25,1);
+    font-size: 1.2rem;
+    color: rgb(0, 9, 87);
     font-style: italic;
 }
 
@@ -38,7 +38,7 @@ header > img{
     padding: 1.2rem 4rem;
     vertical-align: middle;
     color: #fff;
-    background-color: rgb(2, 49, 15);
+    background-color: rgb(2, 9, 49);
     border: 1pt solid rgb(9, 10, 10);
     font-size: 1.1rem;
     box-shadow: 5px 10px 5px rgb(9, 10, 10);
