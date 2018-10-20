@@ -12,7 +12,7 @@ header {
     color:#fff;
 }
 
-header > img{
+header > img {
     width: 150px;
     padding: 1.2rem 4rem;
     height: auto;
@@ -35,7 +35,7 @@ header > img{
  }
 
 .currentconditions {
-    display: inline-block;
+    display: none;
     margin: 1rem 0 1rem 5rem;
     padding: 0.2rem 2rem;
     vertical-align: middle;
@@ -103,9 +103,28 @@ nav li
 
 nav li a { color: #fff; }
 
+.main-header {
+    position: relative;
+}
+
+.main-header img {
+    width: 100%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 1px solid #000;
+    padding: .75rem;
+    color: #fff;
+    background: #000;
+}
+
 .articleimg 
 { 
-    float: left;
+    width: 100%;
+    height: auto;
     padding: 1em; 
 }
 
