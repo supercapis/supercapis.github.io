@@ -1,10 +1,12 @@
+/* type selectors */
 body {
     font-family: 'Lobster', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+    text-align:center
 }
 
 header {
-    background-color: blue;
+    background-color: rgba(0,87,25,.5);
     text-align:center;
     padding: .5rem;
     color:#fff;
@@ -27,18 +29,18 @@ header > img{
 }
 
 .subheading {
-    font-size: 1.2rem;
-    color: rgb(0, 9, 87);
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
     font-style: italic;
-}
+ }
 
 .currentconditions {
     display: inline-block;
     margin: 1rem 0 1rem 5rem;
-    padding: 1.2rem 4rem;
+    padding: 0.2rem 2rem;
     vertical-align: middle;
     color: #fff;
-    background-color: rgb(2, 9, 49);
+    background-color: rgb(90, 67, 221);
     border: 1pt solid rgb(9, 10, 10);
     font-size: 1.1rem;
     box-shadow: 5px 10px 5px rgb(9, 10, 10);
@@ -49,3 +51,74 @@ header > img{
     height: auto;
 }
 
+h1 { margin: 0; }
+
+h2,h3,h4 { color: black; }
+h5 { font-style: italic;}
+h3 
+{ 
+    background: #008000;
+    padding: 1em;
+    margin: 1em;
+}
+
+/* class selectors */
+.container
+{
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav
+{
+	padding: .8em 1em;
+	background: black;
+}
+
+
+/* ID selectors */
+header,footer
+{
+	padding: 1em;
+	color: #fff;
+    background: blue;
+    font-family: arial, helvetica, sans-serif
+
+}
+
+main { margin: 1em 2em; }
+
+/* descendant selectors */
+nav ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+nav li
+{
+	display: inline;
+	margin-right: 1em;
+}
+
+nav li a { color: #fff; }
+
+.articleimg 
+{ 
+    float: left;
+    padding: 1em; 
+}
+
+article p 
+
+{
+    padding: 1em;
+}
+
+/* article selector */
+article 
+{ 
+    background-color: lightgreen;
+    border: 5px solid green;
+ }
