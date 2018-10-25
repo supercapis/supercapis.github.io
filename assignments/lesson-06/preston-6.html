@@ -8,8 +8,8 @@
 	<title>CIT 230 Assignment Preston Town Page | Capis Prestes | BYU-Idaho</title>
 	<link href="https://fonts.googleapis.com/css?family=Lobster+Sans%7cRoboto" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/small-5.css" rel="stylesheet">
-	<link href="css/large-5.css" rel="stylesheet">
+	<link href="css/small-6.css" rel="stylesheet">
+	<link href="css/large-6.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,11 +26,14 @@
 			<img src="images/stormy.png" alt="Current condition weather icon">
 			<p><b>Stormy</b></p>
 		</div>
-
+		<!-- ADD THE CODE FOR THE HAMBURGER RIGHT HERE-->
+		<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+		<!-- ADD THE CODE FOR THE HAMBURGER RIGHT HERE-->
+		
 	</header>
 
 	<nav>
-		<ul>
+		<ul class="navigation">
 			<li><a href="home">Home</a></li>
 			<li><a href="preston">Preston</a></li>
 			<li><a href="sugarcity">Sugar City</a></li>
@@ -45,7 +48,7 @@
 			The Town of Preston
 		</h2>
 		<div class="main-header">
-			<img src="images/city.png" width="1000" height="400" alt="City Image">
+			<img src="images/small.jpeg" alt="City Image">
 			<section class="weathersummary">
 				<h3>Weather Summary</h3>
 				<div class="weatherdetails">
@@ -92,17 +95,14 @@
 			</h4>
 
 			<p>
-				<img src="images/snowy.png" class="articleimg" width="300" height="200" alt="snow">
+				<img src="images/optimizedsnowy.png" class="articleimg" alt="snow">
 				Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore
 				magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
 				nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
 				molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
 				qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
 				amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat
-				volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-				ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
-				illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-				luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+				volut. 
 			</p>
 		</article>
 	</main>
@@ -119,16 +119,17 @@
 			<div class="subheading">The best place to check the weather conditions in this area</div>
 		</div>
 		<div class="generalinformation">
-			<img src="images/map.PNG" width="300" height="200" alt="map">
+			<img src="images/map.PNG" width="400" height="200" alt="map">
 		</div>
 	</aside>
 	<footer>
 		<p>
-			&copy; 2018 Your Weather | Capis Prestes | Friday, 19 October 2020
+			&copy; 2018 Your Weather | Capis Prestes | All Rights Reserved
 		</p>
 
 	</footer>
-
+	<script src="js/currentdate.js"></script>
+	<script src="js/hamburger.js"></script>
 </body>
 
 </html>
