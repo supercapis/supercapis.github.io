@@ -170,6 +170,13 @@ section
    width: 58%;
 }
 
+.forecast
+
+{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
  aside
  { 
     background-color: lightgreen;
