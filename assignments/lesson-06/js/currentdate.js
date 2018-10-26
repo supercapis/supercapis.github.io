@@ -49,5 +49,5 @@ document.getElementById("currentdate").innerHTML = n;
 
 //-------------------------CONCATENATION------------------------//
 
-weekday + ", " + date + " " + month + " " + year
+let myOutput = weekday + ", " + date + " " + month + " " + year
 document.getElementById("currentdate").innerHTML = n;
