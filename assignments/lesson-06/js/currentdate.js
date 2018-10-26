@@ -17,7 +17,7 @@ document.getElementById("currentdate").innerHTML = n;
 
 //--------------------------DATE----------------------------------//
 
-let d = new Date("April 6, 2020");
+let d = new Date();
 let n = d.getDate()
 document.getElementById("currentdate").innerHTML = n;
 
@@ -43,7 +43,11 @@ document.getElementById("currentdate").innerHTML = n;
 
 //---------------------------YEAR-------------------------------//
 
-let d = new Date("April 6, 2020");
+let d = new Date();
 let n = d.getFullYear();
 document.getElementById("currentdate").innerHTML = n;
 
+//-------------------------CONCATENATION------------------------//
+
+weekday + ", " + date + " " + month + " " + year
+document.getElementById("currentdate").innerHTML = n;
