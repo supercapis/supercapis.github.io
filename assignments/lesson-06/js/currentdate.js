@@ -13,13 +13,10 @@ weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
 let n = weekday[d.getDay()]
-document.getElementById("currentdate").innerHTML = n;
 
 //--------------------------DATE----------------------------------//
 
-let d = new Date();
-let n = d.getDate()
-document.getElementById("currentdate").innerHTML = n;
+let o = d.getDate()
 
 //--------------------------MONTH-------------------------------//
 
@@ -37,17 +34,13 @@ month[9] = "October";
 month[10] = "November";
 month[11] = "December";
 
-let d = new Date();
-let n = month[d.getMonth()]
-document.getElementById("currentdate").innerHTML = n;
+let p = month[d.getMonth()]
 
 //---------------------------YEAR-------------------------------//
 
-let d = new Date();
-let n = d.getFullYear();
-document.getElementById("currentdate").innerHTML = n;
+let q = d.getFullYear()
 
 //-------------------------CONCATENATION------------------------//
 
-let myOutput = weekday + ", " + date + " " + month + " " + year
-document.getElementById("currentdate").innerHTML = n;
+let myOutput = n + ", " + o + " " + p + " " + q
+document.getElementById("currentdate").innerHTML = n + ", " + o + " " + p + " " + q;

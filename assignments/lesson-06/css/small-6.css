@@ -1,8 +1,9 @@
 /* type selectors */
 body {
     font-family: 'Lobster', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
+    width: auto;
 }
 
 header {
@@ -61,7 +62,7 @@ h3,h4,h5
 { 
     background: #008000;
     padding: .1em;
-    margin: 1em;
+    
 }
 
 /* class selectors */
@@ -92,11 +93,11 @@ footer
     bottom: 0;
     padding: .1em;
 	color: #fff;
-    background-color: blue;
-    width: 100%;
+    background: blue;
     text-align: center;
     padding: 1px;
     font-family: arial, helvetica, sans-serif
+    
   
 }
 
@@ -168,7 +169,11 @@ article
 
 .forecast
 {
-    
+   background-color: lightgreen;
+   border: 5px solid green;
+   padding: 10px;
+   margin: 0 auto;
+   width: 58%;
 }
 
 section
@@ -177,14 +182,14 @@ section
    border: 5px solid green;
    padding: 10px;
    margin: 0 auto;
-   width: 58%;
+   width: 100%;
 }
 
 .mapimage
 {
     width: 100%;
     height: auto;
-    padding: 1em;
+    
 }
 
  aside
