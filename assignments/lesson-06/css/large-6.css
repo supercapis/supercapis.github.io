@@ -6,9 +6,15 @@
     .articleimg 
     { 
         float: right; 
-        width: 100px;
+        width: 250px;
     }
 
+    .mapimage
+    {
+        float: middle;
+        width: 250px;
+    
+    }
     nav li
     {
         display: inline;
