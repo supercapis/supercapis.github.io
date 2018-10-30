@@ -1,0 +1,209 @@
+/* type selectors */
+body {
+    font-family: 'Lobster', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+}
+
+header {
+    background-color: rgba(0,87,25,.5);
+    text-align:center;
+    padding: .5rem;
+    color:#fff;
+}
+
+header > img {
+    width: 150px;
+    padding: 1.2rem 4rem;
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+.headertext {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headertext h1 {
+    font-size: 3rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+ }
+
+.currentconditions {
+    display: none;
+    margin: 1rem 0 1rem 5rem;
+    padding: 0.2rem 2rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color: rgb(90, 67, 221);
+    border: 1pt solid rgb(9, 10, 10);
+    font-size: 1.1rem;
+    box-shadow: 5px 10px 5px rgb(9, 10, 10);
+}
+
+.currentconditions img {
+    width: 100px;
+    height: auto;
+}
+
+h1 { margin: 0; }
+
+h2,h3,h4 { color: black; }
+
+h5 { font-style: italic;}
+h3,h4,h5 
+{ 
+    background: #008000;
+    padding: .1em;
+    
+}
+
+/* class selectors */
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav
+{
+	padding: .8em 1em;
+	background: black;
+}
+
+
+/* ID selectors */
+header
+{
+	padding: 1em;
+	color: #fff;
+    background: blue;
+    font-family: arial, helvetica, sans-serif
+}
+
+footer
+{
+    bottom: 0;
+    padding: .1em;
+	color: #fff;
+    background: blue;
+    text-align: center;
+    padding: 1px;
+    font-family: arial, helvetica, sans-serif
+    
+  
+}
+
+main { margin: 1em 2em; }
+
+/* descendant selectors */
+nav ul
+{
+	margin: 0;
+	padding: 0;
+}
+/*pseudo selectors*/
+a:hover {background-color: rgba(87, 81, 0, 0.884)}
+
+nav li
+{
+	display: none;
+	margin-right: 1em;
+}
+
+nav li a 
+{   color: #fff; 
+    font-size: 20px;
+}
+
+.main-header {
+    position: relative;
+}
+
+.main-header img {
+    width: 60%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    border: 1px solid #000;
+    padding: .75rem;
+    color: #fff;
+    background: #000;
+    height: 250px;
+    width: 200px;
+    font-size: .9rem;
+}
+
+.articleimg 
+{ 
+    width: 100%;
+    height: auto;
+    padding: 1em; 
+}
+
+article p 
+
+{
+    padding: 1em;
+}
+
+/* article selector */
+article 
+{ 
+    background-color: lightgreen;
+    border: 5px solid green;
+    padding: 10px;
+    margin: 0 auto;
+    width: 58%;
+}
+
+.forecast
+{
+   background-color: lightgreen;
+   border: 5px solid green;
+   padding: 10px;
+   margin: 0 auto;
+   width: 58%;
+}
+
+section
+{
+   background-color: lightgreen;
+   border: 5px solid green;
+   padding: 10px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.mapimage
+{
+    width: 100%;
+    height: auto;
+    
+}
+
+ aside
+ { 
+    background-color: lightgreen;
+    border: 4px solid green;
+    margin: 0 auto;
+    padding: 10px;
+    width: 55%;
+ } 
+
+ @media only screen and (max-width: 37.5em) {
+    .responsive { position: relative; }
+    .responsive li { background-color: #eee;    display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    .responsive li a {  padding: 1rem; text-align: center;  display: block; text-decoration:none; }
+    .responsive li a:hover { background-color: #ddd; }
+}

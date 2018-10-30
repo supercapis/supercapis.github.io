@@ -1,0 +1,26 @@
+@media only screen and (min-width: 70em) {
+    .currentconditions {
+        display: inline-block;
+    }
+    
+    .articleimg 
+    { 
+        float: right; 
+        width: 250px;
+    }
+
+    .mapimage
+    {
+        float: middle;
+        width: 250px;
+    
+    }
+    nav li
+    {
+        display: inline;
+        
+    }
+
+    .hamburger { display: none; }
+}
+
