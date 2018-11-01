@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment Gallery Page for CIT 230: Web Frontend Development | BYU-Idaho.">
+    <title>CIT 230 Assignment Gallery Page | Capis Prestes | BYU-Idaho</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Sans%7cRoboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-7.css" rel="stylesheet">
+    <link href="css/large-7.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <img src="images/cloudy.png" alt="Your Weather logo">
+
+        <div class="headertext">
+            <h1>Your Weather</h1>
+            <div class="subheading">The best place to check the weather conditions in this area</div>
+        </div>
+
+        <div class="currentconditions">
+            <img src="images/stormy.png" alt="Current condition weather icon">
+            <p><b>Stormy</b></p>
+        
+        </div>
+        
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="home">Home</a></li>
+            <li><a href="preston">Preston</a></li>
+            <li><a href="sugarcity">Sugar City</a></li>
+            <li><a href="fishheaven">Fish Heaven</a></li>
+            <li><a href="stormcenter">Storm Center</a></li>
+            <li><a href="gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>
+            Gallery
+        </h2>
+
+
+        <div class="main-header">
+            
+            <p>
+				<img src="images/1cloudy.PNG" class="cloudyimg" alt="Cloudy Image">
+				This is a representation of a cloudy image for the purpose of this website.
+            </p>
+            
+        </div>
+
+        <div class="main-header">
+            
+            <p>
+				<img src="images/2rainny.PNG" class="rainnyimg" alt="Rainny Image">
+				This is a representation of a rainny image for the purpose of this website.
+            </p>
+
+        </div>
+
+        <div class="main-header">
+            
+            <p>
+                    <img src="images/3snowy.PNG" class="snowyimg" alt="Snowy Image">
+                    This is a representation of a snowy image for the purpose of this website.
+            </p>
+
+        </div>
+
+        <div class="main-header">
+
+            
+            <p>
+                    <img src="images/4stormy.PNG" class="stormyimg" alt="Stormy Image">
+                    This is a representation of a stormy image for the purpose of this website.
+            </p>
+
+        </div>
+
+        <div class="main-header">
+
+            <p>
+                    <img src="images/5sunny.PNG" class="sunnyimg" alt="Sunny Image">
+                    This is a representation of a sunny image for the purpose of this website.
+            </p>
+
+        </div>
+
+
+        <div class="main-header">
+
+            <p>
+                    <img src="images/6windy.PNG" class="windyimg" alt="Cloudy Image">
+                    This is a representation of a windy image for the purpose of this website.
+            </p>
+
+        </div>
+
+     
+    </main>
+
+    <footer>
+        <p class="footer-bar">&copy; 2018 Your Weather | All Rights Reserved | Capis Prestes<br>
+            <span id="currentdate"></span>
+        </p>
+    </footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>
