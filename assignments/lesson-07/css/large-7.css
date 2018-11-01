@@ -1,4 +1,4 @@
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 64em) {
     .currentconditions {
         display: inline-block;
     }
@@ -22,5 +22,15 @@
     }
 
     .hamburger { display: none; }
+
+    .gallerypics figure:hover{box-shadow: 2px 2px 8px #454545;}
+
+    .gallerypics
+    {
+       grid-template-columns: auto auto auto;
+     
+    }
 }
+
+
 

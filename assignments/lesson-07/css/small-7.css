@@ -207,3 +207,10 @@ section
     .responsive li a {  padding: 1rem; text-align: center;  display: block; text-decoration:none; }
     .responsive li a:hover { background-color: #ddd; }
 }
+
+.gallerypics
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+}
