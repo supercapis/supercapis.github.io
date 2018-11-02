@@ -31,9 +31,11 @@ header, footer, footer a {
 }
 
 header img {
+    
     width: 220;
-    height: 200;
+    height: 180;
     float: right;
+    
 }
 
 footer {

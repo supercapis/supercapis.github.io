@@ -4,26 +4,27 @@ body {
     font-size: 18px;
     text-align: center;
     width: auto;
+    
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0,87,25,.5);
     text-align:center;
     padding: .5rem;
     color:#fff;
+    background: blue;
+    font-family: arial, helvetica, sans-serif
+    
 }
 
 header > img {
     width: 150px;
     padding: 1.2rem 4rem;
     height: auto;
-    vertical-align: middle;
-    
-}
-
-.headertext {
-    display: inline-block;
-    vertical-align: middle;
+        
 }
 
 .headertext h1 {
@@ -80,13 +81,7 @@ nav
 
 
 /* ID selectors */
-header
-{
-	padding: 1em;
-	color: #fff;
-    background: blue;
-    font-family: arial, helvetica, sans-serif
-}
+
 
 footer
 {
@@ -97,15 +92,14 @@ footer
     text-align: center;
     padding: 1px;
     font-family: arial, helvetica, sans-serif
-    
-  
+      
 }
 
 main { margin: 1em 2em; }
 
 /* descendant selectors */
-nav ul
-{
+nav ul {
+    display: flex;
 	margin: 0;
     padding: 0;
   
@@ -113,20 +107,22 @@ nav ul
 /*pseudo selectors*/
 a:hover {background-color: rgba(87, 81, 0, 0.884)}
 
-nav ul li{
+nav ul li {
     flex: 1 1 auto;
 }
 
 
 nav li
 {
-	display: none;
-	margin-right: 1em;
+	
+    margin-right: 1em;
+    text-decoration: none;
 }
 
 nav li a 
 {   color: #fff; 
     font-size: 20px;
+    text-decoration: none;
 }
 
 .main-header {
