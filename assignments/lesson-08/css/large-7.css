@@ -1,0 +1,36 @@
+@media only screen and (min-width: 64em) {
+    .currentconditions {
+        display: block;
+    }
+    
+    .articleimg 
+    { 
+        float: right; 
+        width: 250px;
+    }
+
+    .mapimage
+    {
+        float: middle;
+        width: 250px;
+    
+    }
+    nav li
+    {
+        display: block;
+        
+    }
+
+    .hamburger { display: none; }
+
+    .gallerypics figure:hover{box-shadow: 2px 2px 8px #454545;}
+
+    .gallerypics
+    {
+       grid-template-columns: auto auto auto;
+     
+    }
+}
+
+
+
