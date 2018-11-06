@@ -32,9 +32,10 @@ header, footer, footer a {
 
 header img {
     
-    width: 220;
-    height: 180;
-    float: right;
+    margin-top: 6.5rem;
+	width: 200px;
+	height: auto;
+	float: right;
     
 }
 
