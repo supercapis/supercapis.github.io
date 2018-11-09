@@ -167,15 +167,6 @@ article
     width: 58%;
 }
 
-.forecast
-{
-   background-color: lightgreen;
-   border: 5px solid green;
-   padding: 10px;
-   margin: 0 auto;
-   width: 58%;
-}
-
 section
 {
    background-color: lightgreen;
@@ -184,6 +175,24 @@ section
    margin: 0 auto;
    width: 100%;
 }
+
+.forecast table,
+th,
+td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+section
+{
+   background-color: lightgreen;
+   border: 5px solid green;
+   padding: 10px;
+   margin: 0 auto;
+   width: 58%;
+}
+
 
 .mapimage
 {
