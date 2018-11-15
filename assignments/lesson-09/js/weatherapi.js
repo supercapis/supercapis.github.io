@@ -1,5 +1,5 @@
 let weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?id=2172797');
+weatherObject.open = 'https://api.openweathermap.org/data/2.5/weather?id=2172797';
 weatherObject.send();
 weatherObject.onload = function () {
     let weatherInfo = JSON.parse(weatherObject.responseText);
