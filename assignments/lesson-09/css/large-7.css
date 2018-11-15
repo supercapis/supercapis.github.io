@@ -30,6 +30,28 @@
        grid-template-columns: auto auto auto;
      
     }
+    #towndata
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+    }
+    .townData
+    {
+        margin: 5px;
+        
+    
+    }
+
+    .townData p
+    {
+        padding: 5px;
+    }
+    .townData img
+    {
+        height: 30%;
+    }
 }
 
 

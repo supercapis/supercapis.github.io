@@ -1,5 +1,5 @@
 let section = document.querySelector('section');
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'http://api.openweathermap.org/data/2.5/weather?q=Preston';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -21,17 +21,11 @@ function showData(jsonObj) {
         let myArticle = document.createElement('article');
             myArticle.className = "townData";
         let myH2 = document.createElement('h2');
-        let myPara1 = document.createElement('p');
-        let myPara2 = document.createElement('p');
-        let myPara3 = document.createElement('p');
-        let myPara4 = document.createElement('p');
-        let myImage = document.createElement("img");
+        let currenttemp = document.getElementById('currenttemp');
+        
         myH2.textContent = town[i].name;
-        myPara1.textContent = 'Motto: ' + town[i].motto;
-        myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
-        myPara3.textContent = 'Population: ' + town[i].currentPopulation;
-        myPara4.textContent = 'Annual Rainfall: ' + town[i].averageRainfall +' inches';
-        myImage.setAttribute("src", "images/"+town[i].name+"-id.PNG");
+        currenttemp.textContent = 'Currently: ' + town[i].motto;
+       
 
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);

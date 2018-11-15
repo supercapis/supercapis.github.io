@@ -221,4 +221,12 @@ section
     display: grid;
     grid-template-columns: auto;
     grid-gap: 20px;
+    
+}
+
+#townData
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
