@@ -24,14 +24,11 @@
 			<div class="subheading">The best place to check the weather conditions in this area</div>
 		</div>
 
-		<div class="currentconditions">
-			<img src="images/stormy.png" alt="Current condition weather icon">
-			<p><b>Stormy</b></p>
+		<div id="currentconditions">
+			<img id="conditionsnow" src="images/stormy.png" alt="Current condition weather icon">
+			<p><b>Condition Now</b></p>
 		</div>
 		
-		
-		
-
 	</header>
 	
 	<nav>
@@ -55,11 +52,11 @@
 			<section class="weathersummary">
 				<h3>Weather Summary</h3>
 				<div class="weatherdetails">
-					<p><span class="label">Currently: </span><span class="value">Sunny</span></p>
+					<p><span class="label">Currently: </span><span id="rightnow">Sunny</span></p>
 					<p><span class="label">Temperature: </span><span id="currenttemp">76</span> &deg;F</p>
 					<p><span class="label">Wind Chill: </span><span id="windchill"></span> &deg; F</p>
-					<p><span class="label">Humidity: </span><span class="value">69</span> %</p>
-					<p><span class="label">Precipitation: </span><span class="value">0</span> inches</p>
+					<p><span class="label">Humidity: </span><span id="humid">69</span> %</p>
+					<p><span class="label">Precipitation: </span><span id="precip">0</span> inches</p>
 					<p><span class="label">Wind Speed: </span><span id="windspeed">5</span> mph</p>
 				</div>
 			</section>

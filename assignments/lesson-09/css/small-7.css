@@ -21,10 +21,19 @@ header {
 }
 
 header > img {
-    width: 150px;
+    width: 120px;
     padding: 1.2rem 4rem;
     height: auto;
         
+}
+
+#conditionsnow
+{
+    display: flex;
+    width: 100px;
+    float: right;
+    padding: 1.2rem 4rem;
+    
 }
 
 .headertext h1 {

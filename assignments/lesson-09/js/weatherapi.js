@@ -9,15 +9,15 @@ weatherSource.onload = function() {
     let weatherInfo = JSON.parse(weatherSource.responseText);
     console.log(weatherInfo);
 
-    document.getElementById("cityName").innerHTML = weatherInfo.name;
-    document.getElementById("currently").innerHTML = weatherInfo.weather["0"].description;
-    document.getElementById("cityTemp").innerHTML = weatherInfo.main.temp;
-    document.getElementById("cityHumid").innerHTML = weatherInfo.main.humidity;
-    document.getElementById("cityWindChill").innerHTML = weatherInfo.wind.speed;
+    document.getElementById("rightnow").innerHTML = weatherInfo.weather["0"].description;
+    document.getElementById("precip").innerHTML = weatherInfo.weather["0"].description;
+    document.getElementById("currenttemp").innerHTML = weatherInfo.main.temp;
+    document.getElementById("humid").innerHTML = weatherInfo.main.humidity;
+    document.getElementById("windspeed").innerHTML = weatherInfo.wind.speed;
 
     let weatherIcon = weatherInfo.weather["0"].icon;
     let iconLocation = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
 
-    document.getElementById("current-conditions").src = iconLocation;
-    document.getElementById("cityMain").innerHTML = weatherInfo.weather["0"].main;
+    document.getElementById("conditionsnow").src = iconLocation;
+    
 }
