@@ -19,5 +19,6 @@ weatherSource.onload = function() {
     let iconLocation = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
 
     document.getElementById("conditionsnow").src = iconLocation;
+    document.getElementById("now").innerHTML = weatherInfo.weather["0"].main;
     
 }
