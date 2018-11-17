@@ -1,3 +1,4 @@
+//This file pushes api to the Weather Summary//
 let weatherSource = new XMLHttpRequest();
 let url = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
 

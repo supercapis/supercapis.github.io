@@ -1,12 +1,11 @@
-let forecastSource = new XMLHttpRequest();
-let url = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=928cdffb6f7b8cf5714b4c2f8047e814&units=imperial";
+//This file pushes api to the 5 days forecast table//
 
-forecastSource.open("GET", url, true);
-
-forecastSource.send();
-
-forecastSource.onload = function () {
-
+const forecastRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2dc961d7969a3deedf5172330221b7f2&units=imperial';
+let forecastRequest = new XMLHttpRequest();
+forecastRequest.open('GET', forecastRequestURL);
+forecastRequest.responseType = 'json';
+forecastRequest.send();
+forecastRequest.onload = function () {
     let forecastData = forecastRequest.response;
     console.log(forecastData);
     let forecast = [];
@@ -47,10 +46,11 @@ forecastSource.onload = function () {
                 break;
         }
 
-        document.getElementById("forecastDay" + i).innerHTML = Math.round(forecast[i]) + "&deg;F";
-        document.getElementById("weekDay" + i).innerHTML = weekday;
+        document.getElementById("fDay" + i).innerHTML=Math.round(forecast[i]) + "&deg;F";
+        document.getElementById("wDay" + i).innerHTML=weekday;
 
     };
 
 
 }
+
