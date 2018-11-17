@@ -5,7 +5,7 @@ forecastSource.open("GET", url, true);
 
 forecastSource.send();
 
-forecastSource.onload = function() {
+forecastSource.onload = function () {
 
     let forecastData = forecastRequest.response;
     console.log(forecastData);
@@ -47,8 +47,8 @@ forecastSource.onload = function() {
                 break;
         }
 
-        document.getElementById("forecastDay" + i).innerHTML=Math.round(forecast[i]) + "&deg;F";
-        document.getElementById("weekDay" + i).innerHTML=weekday;
+        document.getElementById("forecastDay" + i).innerHTML = Math.round(forecast[i]) + "&deg;F";
+        document.getElementById("weekDay" + i).innerHTML = weekday;
 
     };
 
