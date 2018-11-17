@@ -263,18 +263,6 @@ section
     
 }
 
-.townData
-{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    font-size: 14px;
-    background-color: white;
-    border-radius: 1rem;
-    width: 380px;
-    justify-content: center;
-}
-
 
 .stormForm,
 .thanks {
