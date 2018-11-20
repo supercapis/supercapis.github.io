@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Assignment Preston Town Page for CIT 230: Web Frontend Development | BYU-Idaho.">
+	<title>CIT 230 Assignment Preston Town Page | Capis Prestes | BYU-Idaho</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Sans%7cRoboto" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/small-10.css" rel="stylesheet">
+	<link href="css/medium-10" rel="stylesheet">
+	<link href="css/large-10.css" rel="stylesheet">
+	<link href="css/homepage-10.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+
+		<img src="images/cloudy.png" alt="Your Weather logo">
+
+		<div class="headertext">
+			<h1>Your Weather</h1>
+			<div class="subheading">The best place to check the weather conditions in this area</div>
+		</div>
+
+		<div id="currentconditions">
+			<img id="conditionsnow" src="images/stormy.png" alt="Current condition weather icon">
+			<p><span id="now"> </span></p>
+		</div>
+
+	</header>
+
+	<nav>
+		<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+		<ul class="navigation">
+			<li><a href="index-10.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="sodasprings">Soda Springs</a></li>
+			<li><a href="fishhaven">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>
+			The Town of Preston
+		</h2>
+		<div class="main-header">
+			<img src="images/small.jpeg" alt="City Image">
+			<section class="weathersummary">
+				<h3>Weather Summary</h3>
+				<div class="weatherdetails">
+					<p><span class="label">Currently: </span><span id="rightnow">Sunny</span></p>
+					<p><span class="label">Temperature: </span><span id="currenttemp">76</span> &deg;F</p>
+					<p><span class="label">Wind Chill: </span><span id="windchill"></span> &deg; F</p>
+					<p><span class="label">Humidity: </span><span id="humid">69</span> %</p>
+					<p><span class="label">Precipitation: </span><span id="precip">0</span> inches</p>
+					<p><span class="label">Wind Speed: </span><span id="windspeed">5</span> mph</p>
+				</div>
+			</section>
+		</div>
+		<section class="forecast">
+			<h3>High Temperature Forecast</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Day</th>
+						<th id="wDay0"></th>
+						<th id="wDay1"></th>
+						<th id="wDay2"></th>
+						<th id="wDay3"></th>
+						<th id="wDay4"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Forecast</th>
+						<td id="fDay0"></td>
+						<td id="fDay1"></td>
+						<td id="fDay2"></td>
+						<td id="fDay3"></td>
+						<td id="fDay4"></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<article>
+
+			<h4>Weather changes for Thanksgiving</h4>
+			<p class="author">by Jane Smith</p>
+			<p>
+				<img src="images/optimizedsnowy.png" class="articleimg" alt="snow">
+				Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore
+				magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+				nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+				molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+				qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+				amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat
+				volut. Duis autem vel eum iriure dolor in hendrerit et accumsan et iusto odio dignissim qui in vulputate
+				ullamcorper suscipit lobortis nisl ut aliquip ex
+				ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+				illum dolore eu feugiat nulla facilisis at vero erosvelit esse molestie consequat, vel illum dolore eu
+				feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+				delenit...<a href="#">continue to full article</a>
+			</p>
+		</article>
+	</main>
+	<aside>
+		<div class="lasttext">
+			<h5>Where 'Your Weather' is</h5>
+			<p>
+				1330 N 900 E
+				Preston, ID 83263
+
+				(1)999-954-9999
+				yourweather@yourweather.net
+			</p>
+			<p>
+				<img src="images/map.PNG" class="mapimage" alt="map">
+			</p>
+
+		</div>
+
+	</aside>
+	<footer>
+		<p class="footer-bar">&copy; 2018 Your Weather | All Rights Reserved | Capis Prestes | <span id="currentdate"></span></p>
+	</footer>
+
+	<script src="js/currentdate.js"></script>
+	<script src="js/hamburger.js"></script>
+	<script src="js/weatherapi.js"></script>
+	<script src="js/windchill.js"></script>
+	<script src="js/forecastweather.js"></script>
+</body>
+
+</html>

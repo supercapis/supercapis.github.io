@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment Gallery Page for CIT 230: Web Frontend Development | BYU-Idaho.">
+    <title>CIT 230 Assignment Gallery Page | Capis Prestes | BYU-Idaho</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Sans%7cRoboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-10.css" rel="stylesheet">
+    <link href="css/medium-10.css" rel="stylesheet">
+    <link href="css/large-10.css" rel="stylesheet">
+    <link href="css/homepage-10.css" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <header>
+
+        <img src="images/cloudy.png" alt="Your Weather logo">
+
+        <div class="headertext">
+            <h1>Your Weather</h1>
+            <div class="subheading">The best place to check the weather conditions in this area</div>
+        </div>
+
+        <div id="currentconditions">
+			<img id="conditionsnow" src="images/stormy.png" alt="Current condition weather icon">
+			<p><span id="now"> </span></p>
+		</div>
+
+        
+
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="index-10.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="sodasprings">Soda Springs</a></li>
+			<li><a href="fishhaven">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="stormForm">
+            <h1>Storm Report</h1>
+
+            <form method="get" action="thanks.html">
+
+                <div class="section">
+                    <span>1</span>Personal Information</div>
+                <div class="subsection">
+                    <label>Full Name:<input type="text" name="fullname" placeholder="Full Name" pattern="[A-z\s]{5,}"
+                            required autocomplete="off"></label>
+                    <label>Email:<input type="email" name="email" placeholder="email@internet.com" autocomplete="off"></label>
+                    <label>Phone Number:<input type="tel" name="phone" required autocomplete="off"></label>
+                    <label>ZIP Code:<input type="text" name="ZIP" pattern="^\d{5,6}(?:[-\s]\d{4})?$" required
+                            autocomplete="off"></label>
+                </div>
+
+                <div class="section">
+                    <span>2</span>Storm Report</div>
+                <div class="subsection">
+                    <label>Storm Date:<input type="date" name="date"></label>
+
+                    <label>Storm Type:<input type="text" name="stormtype" list="storm">
+
+                        <datalist id="storm">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Sharknado"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+
+                    </label>
+
+                    <label>Storm Severity<br>
+                        1 <input type="range" id="severity" value="5" min="1" max="10" step="1" list="sevsettings"> 10
+                        <datalist id="sevsettings">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                    </label>
+                    <label>
+                        Storm Region:
+                        <select name="region">
+                            <option value="select" disabled selected>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Sugar City">Sugar City</option>
+                            <option value="Fish Heaven">Fish Heaven</option>
+                        </select></label>
+                    <label>
+                        Are You In Danger:</label>
+
+                    <label><input type="radio" name="dangerLevel" value="yes"><span class="ymn">Yes</span></label>
+                    <label><input type="radio" name="dangerLevel" value="maybe"><span class="ymn">Maybe</span></label>
+                    <label><input type="radio" name="dangerLevel" value="no"><span class="ymn">No</span></label>
+                </div>
+                <div class="section">
+                    <span>3</span>Additional Information</div>
+                <div class="subsection">
+                    <label>
+                        Comments:
+                        <textarea name="additionalInfo"></textarea>
+
+                    </label>
+                </div>
+
+                <input type="submit" value="Send" class="submitButton">
+
+            </form>
+        </div>
+
+
+    </main>
+
+    <footer>
+		<p class="footer-bar">&copy; 2018 Your Weather | All Rights Reserved | Capis Prestes | <span id="currentdate"></span></p>
+	</footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assignment Gallery Page for CIT 230: Web Frontend Development | BYU-Idaho.">
+    <title>CIT 230 Assignment Gallery Page | Capis Prestes | BYU-Idaho</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Sans%7cRoboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/medium-10.css" rel="stylesheet">
+    <link href="css/large-10.css" rel="stylesheet">
+    <link href="css/homepage-10.css" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+    <header>
+
+        <img src="images/cloudy.png" alt="Your Weather logo">
+
+        <div class="headertext">
+            <h1>Your Weather</h1>
+            <div class="subheading">The best place to check the weather conditions in this area</div>
+        </div>
+
+        <div id="currentconditions">
+			<img id="conditionsnow" src="images/stormy.png" alt="Current condition weather icon">
+			<p><span id="now"> </span></p>
+		</div>
+
+        
+
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="index-10.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="sodasprings">Soda Springs</a></li>
+            <li><a href="fishhaven">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+       <section id="towndata"></section> 
+
+    </main>
+
+    <footer>
+		<p class="footer-bar">&copy; 2018 Your Weather | All Rights Reserved | Capis Prestes | <span id="currentdate"></span></p>
+	</footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/datafromcity.js"></script>
+</body>
+
+</html>

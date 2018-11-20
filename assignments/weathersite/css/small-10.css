@@ -1,0 +1,381 @@
+body {
+    font-family: 'Lobster', sans-serif;
+    font-size: 18px;
+    text-align: center;
+        
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(0,87,25,.5);
+    text-align:center;
+    color:#fff;
+    background: blue;
+    font-family: arial, helvetica, sans-serif
+    
+}
+
+header > img {
+    width: 100px;
+    padding: 1.2rem 4rem;
+    height: auto;
+        
+}
+
+#conditionsnow
+{
+    display: flex;
+    width: 90px;
+    float: right;
+    padding: 1rem 4rem;
+    
+}
+
+.headertext h1 {
+    font-size: 3rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    padding: 1rem;
+    
+ }
+
+.currentconditions {
+    display: none;
+    margin: 1rem 0 1rem 5rem;
+    padding: 0.2rem 2rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color: rgb(90, 67, 221);
+    border: 1pt solid rgb(9, 10, 10);
+    font-size: 1.1rem;
+    box-shadow: 5px 10px 5px rgb(9, 10, 10);
+}
+
+.currentconditions img {
+    width: 100px;
+    height: auto;
+}
+
+h1 
+{
+    margin: 0;
+}
+
+h2
+{
+    color: black;
+}
+h3
+{
+    display: flex;
+    color: white;
+    background: #000000;
+    padding: .1em;
+    font-size: 20px;
+    border: 5px solid black;
+}
+h4
+{
+    display: flex;
+    color: white;
+    background: #000000;
+    padding: .1em;
+    font-size: 20px;
+    border: 5px solid black;
+}
+h5 
+{ 
+    display: flex;
+    color: white;
+    background: #000000;
+    padding: .1em;
+    font-size: 20px;
+    border: 5px solid black;
+}
+
+
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav
+{
+	padding: .8em 1em;
+	background: black;
+}
+
+footer
+{
+    bottom: 0;
+    padding: .1em;
+	color: #fff;
+    background: blue;
+    text-align: center;
+    padding: 1px;
+    font-family: arial, helvetica, sans-serif
+      
+}
+
+
+
+
+nav ul {
+    display: flex;
+	margin: 0;
+    padding: 0;
+  
+}
+
+a:hover {background-color: rgba(87, 81, 0, 0.884)}
+
+nav ul li {
+    flex: 1 1 auto;
+    }
+
+
+nav li
+{
+	margin-right: 0.1em;
+    text-decoration: none;
+}
+
+nav li a 
+{   color: #fff; 
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.main-header {
+    position: relative;
+}
+
+.main-header img {
+    width: 60%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    border: 1px solid #000;
+    padding: .75rem;
+    color: #fff;
+    background: #000;
+    height: 250px;
+    width: 200px;
+    font-size: .9rem;
+}
+
+.article img 
+{ 
+    width: 100%;
+    height: auto;
+    padding: .1em; 
+}
+
+.author
+{
+    padding: 0;
+}
+
+article p 
+
+{
+    text-align: left;
+    padding: 0;
+}
+
+article 
+{ 
+    background-color: lightskyblue;
+    padding: 10px;
+    height: auto;
+    margin: 1rem auto;
+    width: 60%;
+    border: 1px solid blue
+}
+
+.forecast
+{
+    margin: 1rem auto;
+}
+
+.forecast table,
+th,
+td {
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+section
+{
+   background-color: lightskyblue;
+   padding: 10px;
+   margin: 0 auto;
+   width: 60%;
+   border: 1px solid blue
+}
+
+
+.mapimage
+{
+    width: 100%;
+    height: auto;
+    
+}
+
+ aside
+ { 
+    background-color: lightskyblue;
+    margin: 1rem auto;
+    padding: 10px;
+    height: auto;
+    width: 60%;
+    border: 1px solid blue
+ } 
+
+ @media only screen and (max-width: 37.5em) {
+    .responsive { position: relative; }
+    .responsive li { background-color: #eee;    display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    .responsive li a {  padding: 1rem; text-align: center;  display: block; text-decoration:none; }
+    .responsive li a:hover { background-color: #ddd; }
+}
+
+.gallerypics
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    
+}
+
+
+.stormForm,
+.thanks {
+    width: 400px;
+    padding:40px;
+    margin: 0 auto;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    
+}
+.stormForm .subsection{
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    
+}
+.stormForm h1,
+.thanks h1{
+    background: rgb(9, 50, 233);
+    padding: 10px 20px 15px 20px;
+    margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid rgb(9, 50, 233);
+    
+    
+}
+
+.stormForm label{
+    display: block;
+    color: #888;
+    margin-bottom: 15px;
+}
+.stormForm input[type="text"],
+.stormForm input[type="date"],
+.stormForm input[type="email"],
+.stormForm input[type="number"],
+.stormForm input[type="tel"],
+.stormForm select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.stormForm input[type="radio"]{
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+
+.stormForm textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    width: 100%;
+    height: 12rem;
+    
+}
+.ymn {
+    margin-right:1.5rem;
+    margin-left: .5rem;
+}
+
+.stormForm .section{
+    font: normal 20px 'Bitter', serif;
+    color: rgb(9, 50, 233);
+    margin-bottom: 5px;
+}
+.stormForm .section span {
+    background: rgb(9, 50, 233);
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -45px;
+    color: #fff;
+    margin-top: -3px;
+}
+.stormForm input[type="button"],
+.stormForm input[type="submit"]{
+    background: rgb(9, 50, 233);
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid rgb(9, 50, 233);
+    font-size: 15px;
+}
+.stormForm input[type="button"]:hover,
+.stormForm input[type="submit"]:hover{
+    background: rgb(9, 50, 233);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+input#severity{
+    position:relative;
+    top:.25rem;
+
+}

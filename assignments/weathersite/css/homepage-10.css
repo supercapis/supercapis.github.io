@@ -1,0 +1,148 @@
+body {
+    font-family: 'Lobster', sans-serif;
+    font-size: 18px;
+    text-align: center;
+        
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(0,87,25,.5);
+    text-align:center;
+    color:#fff;
+    background: blue;
+    font-family: arial, helvetica, sans-serif
+    
+}
+
+header > img {
+    width: 100px;
+    padding: 1.2rem 4rem;
+    height: auto;
+        
+}
+
+#conditionsnow
+{
+    display: flex;
+    width: 90px;
+    float: right;
+    padding: 1rem 4rem;
+    
+}
+
+.headertext h1 {
+    font-size: 3rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    padding: 1rem;
+    
+ }
+
+.currentconditions {
+    display: none;
+    margin: 1rem 0 1rem 5rem;
+    padding: 0.2rem 2rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color: rgb(90, 67, 221);
+    border: 1pt solid rgb(9, 10, 10);
+    font-size: 1.1rem;
+    box-shadow: 5px 10px 5px rgb(9, 10, 10);
+}
+
+.currentconditions img {
+    width: 100px;
+    height: auto;
+}
+
+h1 
+{
+    margin: 0;
+}
+
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav
+{
+	padding: .8em 1em;
+	background: black;
+}
+
+footer
+{
+    bottom: 0;
+    padding: .1em;
+	color: #fff;
+    background: blue;
+    text-align: center;
+    padding: 1px;
+    font-family: arial, helvetica, sans-serif
+      
+}
+
+nav ul {
+    display: flex;
+	margin: 0;
+    padding: 0;
+  
+}
+
+a:hover {background-color: rgba(87, 81, 0, 0.884)}
+
+nav ul li {
+    flex: 1 1 auto;
+    }
+
+
+nav li
+{
+	margin-right: 0.1em;
+    text-decoration: none;
+}
+
+nav li a 
+{   color: #fff; 
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.main-header {
+    position: relative;
+}
+
+.main-header img {
+    width: 60%;
+}
+
+ @media only screen and (max-width: 37.5em) {
+    .responsive { position: relative; }
+    .responsive li { background-color: #eee;    display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    .responsive li a {  padding: 1rem; text-align: center;  display: block; text-decoration:none; }
+    .responsive li a:hover { background-color: #ddd; }
+}
+
+.townData
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    padding: 1rem;
+    font-size: 14px;
+    border: 5px solid black;
+    border-radius: 1rem;
+    justify-content: center;
+    width: 350px;
+}
