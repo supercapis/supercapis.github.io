@@ -155,6 +155,8 @@ nav li a
 
 .main-header img {
     width: 60%;
+    border: 5px solid blue;
+    
 }
 
 .weathersummary {
