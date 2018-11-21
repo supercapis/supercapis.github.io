@@ -257,10 +257,19 @@ section
     border: 1px solid blue
  } 
 
- .lasttext
- {
-     text-align: center;
- }
+.address
+{
+    padding: 0 1em 1em 1em;
+}
+.contact 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center; 
+    font-size: 1.1em;
+}
+
 
 
  @media only screen and (max-width: 37.5em) {
