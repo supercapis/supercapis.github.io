@@ -264,7 +264,7 @@ section
 .contact 
 {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center; 
     font-size: 1.1em;
