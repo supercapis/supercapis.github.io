@@ -222,6 +222,7 @@ article
 th,
 td {
     margin: auto;
+    background-color: whitesmoke;
     border: 2px solid black;
     border-collapse: collapse;
     letter-spacing: 0.15rem;

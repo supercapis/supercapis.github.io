@@ -1,21 +1,21 @@
 //This file pushes api to the 5 days forecast table//
 
-const forecastRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2dc961d7969a3deedf5172330221b7f2&units=imperial';
-let forecastRequest = new XMLHttpRequest();
-forecastRequest.open('GET', forecastRequestURL);
-forecastRequest.responseType = 'json';
-forecastRequest.send();
-forecastRequest.onload = function () {
-    let forecastData = forecastRequest.response;
-    console.log(forecastData);
-    let forecast = [];
+let fRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2dc961d7969a3deedf5172330221b7f2&units=imperial';
+let fRequest = new XMLHttpRequest();
+fRequest.open('GET', fRequestURL);
+fRequest.responseType = 'json';
+fRequest.send();
+fRequest.onload = function () {
+    let fData = fRequest.response;
+    console.log(fData);
+    let f = [];
     let day = [];
     let i = 0;
     let weekday = "";
-    forecastData.list.forEach(x => {
-        let dateCheck = forecastData.list[i].dt_txt;
+    fData.list.forEach(x => {
+        let dateCheck = fData.list[i].dt_txt;
         if (dateCheck.includes("15:00:00")) {
-            forecast.push(forecastData.list[i].main.temp);
+            f.push(fData.list[i].main.temp);
             let d = new Date(dateCheck);
             day.push(d.getDay());
         }
@@ -46,7 +46,7 @@ forecastRequest.onload = function () {
                 break;
         }
 
-        document.getElementById("fDay" + i).innerHTML=Math.round(forecast[i]) + "&deg;F";
+        document.getElementById("fDay" + i).innerHTML=Math.round(f[i]) + "&deg;F";
         document.getElementById("wDay" + i).innerHTML=weekday;
 
     };
