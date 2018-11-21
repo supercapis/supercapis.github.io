@@ -183,9 +183,17 @@ nav li a
     padding: .1em; 
 }
 
+article img p
+{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
 .author
 {
-    padding: 0;
+    margin-top: -20px;
+    font-style: italic;
+    font-size: 0.75em;
+    width: 100%;
 }
 
 article p 
