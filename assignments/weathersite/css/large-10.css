@@ -32,6 +32,12 @@
 
     .hamburger { display: none; }
 
+    .active
+    {
+    background-color:orange;
+    color:#fff;
+    }
+
     .gallerypics figure:hover{box-shadow: 2px 2px 8px #454545;}
 
     .gallerypics

@@ -113,18 +113,6 @@ nav
 	background: black;
 }
 
-footer
-{
-    bottom: 0;
-    padding: .1em;
-	color: #fff;
-    background: blue;
-    text-align: center;
-    padding: 1px;
-    font-family: arial, helvetica, sans-serif
-      
-}
-
 
 
 
@@ -153,6 +141,12 @@ nav li a
     font-size: 20px;
     text-decoration: none;
     
+}
+
+.active
+{
+    background-color: orange;
+    color:#fff;
 }
 
 .main-header {
@@ -269,6 +263,18 @@ section
     justify-content: space-around;
     align-items: center; 
     font-size: 1.1em;
+}
+
+footer
+{
+    bottom: 0;
+    padding: .1em;
+	color: #fff;
+    background: blue;
+    text-align: center;
+    padding: 1px;
+    font-family: arial, helvetica, sans-serif
+      
 }
 
 
