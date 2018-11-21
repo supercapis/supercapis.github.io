@@ -235,7 +235,7 @@ section
 {
     width: 100%;
     height: auto;
-    
+        
 }
 
  aside
@@ -247,6 +247,12 @@ section
     width: 60%;
     border: 1px solid blue
  } 
+
+ .lasttext
+ {
+     text-align: center;
+ }
+
 
  @media only screen and (max-width: 37.5em) {
     .responsive { position: relative; }
@@ -268,7 +274,7 @@ section
 .thanks {
     width: 400px;
     padding:40px;
-    margin: 0 auto;
+    margin: 2rem auto;
     background: #FFF;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
