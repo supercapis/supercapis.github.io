@@ -6,7 +6,7 @@ weatherSource.open("GET", url, true);
 
 weatherSource.send();
 
-weatherSource.onload = function() {
+weatherSource.onload = function () {
     let weatherInfo = JSON.parse(weatherSource.responseText);
     console.log(weatherInfo);
 
@@ -21,5 +21,13 @@ weatherSource.onload = function() {
 
     document.getElementById("conditionsnow").src = iconLocation;
     document.getElementById("now").innerHTML = weatherInfo.weather["0"].main;
-    
+
+    //I embedded this code to calculate windchill properly//
+
+    let currenttemp = parseFloat(document.getElementById('currenttemp').innerHTML);
+    let windspeed = parseFloat(document.getElementById('windspeed').innerHTML);
+    var f = 35.74 + 0.6215 * currenttemp - 35.75 * Math.pow(windspeed, 0.16) + 0.4275 * currenttemp * Math.pow(windspeed, 0.16);
+    document.getElementById("windchill").innerHTML = Math.round(f);
+
 }
+
