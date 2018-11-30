@@ -217,7 +217,7 @@ header {
 .boxes > ul {
     list-style:square;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     font-family: 'Raleway', sans-serif;
     color:rgba(0,0,0,0.8);
 }
