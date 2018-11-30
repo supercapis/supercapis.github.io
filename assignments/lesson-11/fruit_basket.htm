@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment Fruit Basket Menu Page for CIT 230: Web Frontend Development | BYU-Idaho.">
+    <title>CIT 230 Assignment Fruit Basket Menu Page | Capis Prestes | BYU-Idaho</title>
+    <link rel="stylesheet" href="css/fruitbasket.css">
+    <!--<script src="js/jquery-2.2.1.min.js"></script><script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            // this is where jQuery code goes
+            // It contains fruit names and quantity numbers
+            var fruitBasket = [{ title: 'Apples', quantity: 55 },
+            { title: 'Oranges', quantity: 40 },
+            { title: 'Kiwis', quantity: 50 },
+            { title: 'Strawberries', quantity: 65 },
+            { title: 'Peaches', quantity: 20 },
+            { title: 'Mangoes', quantity: 5 },
+            { title: 'Tomatoes', quantity: 30 }];
+
+            // Including jQuery code here
+            $.each(fruitBasket, function (index, element) {
+                $('.fruits').append('<li>We have ' + element.quantity +
+                    " " + element.title + '</li>');
+            })
+
+            $('.fruits > li').each(function (index, element) {
+                $(element).css('background-color', 'rgb(150, 100, 0)')
+
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="fruits">
+
+
+        </ul>
+    </div>
+</body>
+
+</html>

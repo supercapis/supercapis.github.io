@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment Animated Menu Page for CIT 230: Web Frontend Development | BYU-Idaho.">
+    <title>CIT 230 Assignment Animated Menu Page | Capis Prestes | BYU-Idaho</title>
+    <link rel="stylesheet" href="css/animated.css">
+    <!--<script src="js/jquery-2.2.1.min.js"></script><script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            // this is where jQuery code goes
+            $('.navigation >li').hover(function () {
+                // when mouse pointer ends pointing
+
+                $(this).addClass('openSesame');
+
+            }, function () {
+
+                $(this).removeClass('openSesame');
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <ul class="navigation">
+        <li>Blog</li>
+        <li>Services</li>
+        <li>Catalog</li>
+        <li>Terms</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </ul>
+</body>
+
+</html>
