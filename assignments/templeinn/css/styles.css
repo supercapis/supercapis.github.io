@@ -1,0 +1,114 @@
+*{
+  margin:0;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  text-decoration: none;
+ }
+
+body, html {
+  background: lightgreen;
+  font-family: 'Istok Web', sans-serif;
+  height:100%;
+}
+
+.global-wrapper{
+  
+  min-height: 100%;
+  margin: 0 auto -100px auto;
+  max-width:900px;
+  background: white;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  padding-top: 30px;
+}
+
+header {
+  max-width: 800px;
+  height:175px;
+  margin: auto;
+  border:solid 1px black;
+  background-color: green;
+}
+
+#temple {
+  color:white;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin:20px 0 0 0;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  margin: -15px 0 45px 0;
+  font-size: 16px;
+}
+
+nav {
+  width: 100%;
+  border:solid px;
+  margin:-14px 0 0 0;
+  background-color:rgba(255,255,255,0.6);
+  padding:10px 10px 10px 15.5px;
+  border:solid px black;
+}
+
+a {
+  display: inline-block;
+  margin: 0 auto;
+  border: solid px black;
+  width:16%;
+  text-align:center;
+  text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;;
+  color: white;
+}
+
+a:hover {
+  color:white;
+}
+
+.main-page-area {
+  max-width: 800px;
+  height:100%;
+  margin: 0 auto;
+  border-left:solid 1px black;
+  border-right:solid 1px black;
+  padding:40px;
+}
+
+.main-page-area p {
+  background: lightgray;
+  padding:10px 15px;
+  max-width:500px;
+  margin:0 auto;  
+}
+
+.global-wrapper:after {
+  content:"";
+  display: block;
+  border:solid px green;
+  background-color: white;
+}
+
+
+.site-footer, .global-wrapper:after {
+  height: 100px;
+}
+
+.site-footer {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background-color: green;
+  border-left:solid 1px black;
+  border-right:solid 1px black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+
