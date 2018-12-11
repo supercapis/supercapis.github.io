@@ -8,10 +8,10 @@
     <meta name="description" content="Assignment Temple Inn Page for CIT 230: Web Frontend Development | BYU-Idaho.">
     <title>CIT 230 Assignment Temple Inn Page | Capis Prestes | BYU-Idaho</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-small.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,400italic|Istok+Web:400,400italic,700italic|Nunito:700,300"
         rel="stylesheet" type="text/css">
-    
+
 </head>
 
 <body>
@@ -35,19 +35,202 @@
 
         <div class="main-page-area">
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            
+            <head>
+                <meta charset="utf-8" />
+                <title>Hotel Natoma - Reservations</title>
+            </head>
+
+            <body>
+                <div id="box">
+
+                    <article>
+                        <h2 id="main">Reservations</h2>
+                        <form id="formfill">
+                            <fieldset id="contactinfo">
+                                <legend><span>Contact Information</span></legend>
+                                <label>
+                                    Name
+                                    <input type="text" name="name" id="nameinput" placeholder="First and last name" /><br>
+                                </label>
+                                <br>
+                                <label>
+                                    Email
+                                    <input type="email" name="email" id="emailinput" placeholder="address@example.com" /><br>
+                                </label>
+                                <br>
+                                <label>
+                                    Phone
+                                    <input type="text" name="phone" id="phoneinput" placeholder="555-123-4567" /><br>
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset id="reservationinfo">
+                                <legend><span>Reservation Information</span></legend>
+                                <fieldset id="partysize">
+                                    <legend>Party size</legend>
+                                    <label>
+                                        Number in your party
+                                        <input type="number" name="partynumber" id="partynumber" min="1" max="50" />
+                                    </label><br>
+                                    <label>
+                                        Number of rooms required
+                                        <input type="number" name="roomsrequired" id="roomsrequired" min="1" max="38" />
+                                    </label><br>
+                                </fieldset>
+                                <fieldset id="bedpref">
+                                    <legend>Bed preference</legend>
+                                    <label for="kingqueen">
+                                        <input type="checkbox" id="kingqueen" value="King/Queen" name="bedpref" />
+                                        King/Queen
+                                    </label><br>
+                                    <label for="twin">
+                                        <input type="checkbox" id="twin" value="Twin" name="bedpref" />
+                                        Twin
+                                    </label><br>
+                                    <label>
+                                        <input type="checkbox" id="othermix" value="Other/Mix" name="bedpref" />
+                                        Other/Mix (please specify in Additional Information section below)
+                                    </label><br>
+                                </fieldset>
+                                <fieldset id="checkin">
+                                    <legend>Check-in date</legend>
+                                    <select id="inmonth" name="inmonth">
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select id="indate" name="indate">
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select id="inyear" name="inyear">
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset id="checkout">
+                                    <legend>Check-out date</legend>
+                                    <select id="outmonth" name="outmonth">
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select id="outdate" name="outdate">
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select id="outyear" name="outyear">
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset id="parking">
+                                    <legend>Parking</legend>
+                                    <label>
+                                        I need parking for
+                                        <input type="number" name="parking" id="parkinginput" min="0" max="22" />
+                                        vehicles.
+                                    </label>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset id="additionalinfo">
+                                <legend><span>Additional Information</span></legend>
+                                <label>
+                                    Feedback, special requests, or other information
+                                    <textarea id="feedback" name="feedback" rows="4" cols="55"></textarea>
+                                </label>
+                            </fieldset>
+                            <fieldset id="submitbutton">
+                                <input type="submit" id="submit" value="Submit" />
+                            </fieldset>
+                        </form>
+                    </article>
+                    <footer>
+                        <p id="contact">4800 Montgomery Ln #300, &#8226; Bethesda, MD 20814 &#8226; (805) 050-0505</p>
+                    </footer>
+                </div>
+            </body>
+
         </div>
 
 
@@ -59,6 +242,7 @@
     </footer>
 
     <script src="js/currentdate.js"></script>
+    <script src="js/reservation.js"></script>
 
 </body>
 
