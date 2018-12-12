@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box; 
   box-sizing: border-box; 
   text-decoration: none;
- }
+}
 
 body, html {
   background: lightgreen;
@@ -81,7 +81,7 @@ a:hover {
 .main-page-area p {
   background: lightgray;
   padding:10px 15px;
-  max-width:550px;
+  max-width:600px;
   margin:0 auto;  
 }
 
