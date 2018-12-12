@@ -35,6 +35,11 @@ header {
   color:white;
 }
 
+.headerlogo {
+  width: 300px;
+  height: auto;
+}
+
 h1 {
   font-size: 50px;
   text-align: center;
@@ -81,7 +86,7 @@ a:hover {
 .main-page-area p {
   background: lightgray;
   padding:10px 15px;
-  max-width:400px;
+  max-width:600px;
   margin:0 auto;  
 }
 
@@ -92,7 +97,17 @@ a:hover {
   background-color: white;
 }
 
+.fourtemples {
+  text-align: center;
+}
 
+.reserve {
+  text-align: center;
+}
+
+.sgeorge {
+  text-align: center;
+}
 .site-footer, .global-wrapper:after {
   height: 100px;
 }

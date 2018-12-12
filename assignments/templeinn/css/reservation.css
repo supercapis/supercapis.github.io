@@ -209,6 +209,11 @@ input:focus, textarea:focus {
     color:white;
   }
   
+  .headerlogo {
+    width: 300px;
+    height: auto;
+  }
+
   h1 {
     font-size: 50px;
     text-align: center;
