@@ -65,7 +65,7 @@ nav {
 }
 
 .active {
-  background-color:orange;
+  background-color: lightgreen;
   color:#fff;
 }
 
@@ -135,11 +135,6 @@ a:hover {
   font-size: 15px;
   text-align: center;
 }
-/*
-.templeinfo{
-  display: none;
-
-}*/
 
 .showtemple{
   display: block;
@@ -179,7 +174,7 @@ h3 {
   max-width: 400px;
   background: white;
   margin: 0 auto;
-box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-header {
@@ -188,6 +183,7 @@ box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0
   cursor: pointer;
   font-weight: 700;
   padding: 1.5rem;
+  
 }
 
 .accordion-header:hover {
