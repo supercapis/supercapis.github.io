@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Temple Closure</h2>
+
+<select id="myselect" onchange="change_myselect(this.value)">
+  <option value="">Mount Timpanogos Temple Closure:</option>
+  <option value="a">"Tuesday, January 1, 2019",</option>
+  <option value="b">"Saturday, April 6, 2019",</option>
+  <option value="c">"Monday, May 13 to Monday, May 27, 2019",</option>
+  <option value="d">"Thursday, July 4, 2019",</option>
+  <option value="e">"Wednesday, July 24, 2019",</option>
+  <option value="f">"Saturday, October 5, 2019",</option>
+  <option value="g">"Monday, November 11, 2019 - Tuesday, November 26, 2019",</option>
+  <option value="h">"Wednesday, November 27, 2019 - Thursday, November 28, 2019",</option>
+  <option value="i">"Tuesday, December 24, 2019 - Wednesday, December 25, 2019",</option>
+  <option value="j">"Tuesday, December 31, 2019"</option>
+</select>
+
+<select id="myselect" onchange="change_myselect(this.value)">
+    <option value="">Mount Timpanogos Temple Closure::</option>
+    <option value="a">"Tuesday, January 1, 2019",</option>
+    <option value="b">"Saturday, April 6, 2019",</option>
+    <option value="c">"Monday, May 13 to Monday, May 27, 2019",</option>
+    <option value="d">"Thursday, July 4, 2019",</option>
+    <option value="e">"Wednesday, July 24, 2019",</option>
+    <option value="f">"Saturday, October 5, 2019",</option>
+    <option value="g">"Monday, November 11, 2019 - Tuesday, November 26, 2019",</option>
+    <option value="h">"Wednesday, November 27, 2019 - Thursday, November 28, 2019",</option>
+    <option value="i">"Tuesday, December 24, 2019 - Wednesday, December 25, 2019",</option>
+    <option value="j">"Tuesday, December 31, 2019"</option>
+  </select>
+
+  <select id="myselect" onchange="change_myselect(this.value)">
+    <option value="">Mount Timpanogos Temple Closure:</option>
+    <option value="a">"Tuesday, January 1, 2019",</option>
+    <option value="b">"Saturday, April 6, 2019",</option>
+    <option value="c">"Monday, May 13 to Monday, May 27, 2019",</option>
+    <option value="d">"Thursday, July 4, 2019",</option>
+    <option value="e">"Wednesday, July 24, 2019",</option>
+    <option value="f">"Saturday, October 5, 2019",</option>
+    <option value="g">"Monday, November 11, 2019 - Tuesday, November 26, 2019",</option>
+    <option value="h">"Wednesday, November 27, 2019 - Thursday, November 28, 2019",</option>
+    <option value="i">"Tuesday, December 24, 2019 - Wednesday, December 25, 2019",</option>
+    <option value="j">"Tuesday, December 31, 2019"</option>
+  </select>
+
+  <select id="myselect" onchange="change_myselect(this.value)">
+    <option value="">Mount Timpanogos Temple Closure:</option>
+    <option value="a">"Tuesday, January 1, 2019",</option>
+    <option value="b">"Saturday, April 6, 2019",</option>
+    <option value="c">"Monday, May 13 to Monday, May 27, 2019",</option>
+    <option value="d">"Thursday, July 4, 2019",</option>
+    <option value="e">"Wednesday, July 24, 2019",</option>
+    <option value="f">"Saturday, October 5, 2019",</option>
+    <option value="g">"Monday, November 11, 2019 - Tuesday, November 26, 2019",</option>
+    <option value="h">"Wednesday, November 27, 2019 - Thursday, November 28, 2019",</option>
+    <option value="i">"Tuesday, December 24, 2019 - Wednesday, December 25, 2019",</option>
+    <option value="j">"Tuesday, December 31, 2019"</option>
+  </select>
+
+<p id="demo"></p>
+
+<script>
+function change_myselect(sel) {
+  var obj, dbParam, xmlhttp, myObj, x, txt = "";
+  obj = { table: sel, limit: 20 };
+  dbParam = JSON.stringify(obj);
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 8 && this.status == 200) {
+      myObj = JSON.parse(this.responseText);
+      txt += "<table border='1'>"
+      for (x in myObj) {
+        txt += "<tr><td>" + myObj[x].name + "</td></tr>";
+      }
+      txt += "</table>"    
+      document.getElementById("demo").innerHTML = txt;
+      }
+    };
+  xmlhttp.open("POST", "json_demo_db_post.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("x=" + dbParam);
+}
+</script>
+
+</body>
+</html>
