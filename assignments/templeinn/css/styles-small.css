@@ -108,6 +108,10 @@ a:hover {
   text-align: center;
 }
 
+.tmpl-img{
+  max-width: 100%;
+}
+
 .reserve {
   text-align: center;
 }
@@ -131,5 +135,13 @@ a:hover {
   font-size: 15px;
   text-align: center;
 }
+/*
+.templeinfo{
+  display: none;
 
+}*/
+
+.showtemple{
+  display: block;
+}
 
