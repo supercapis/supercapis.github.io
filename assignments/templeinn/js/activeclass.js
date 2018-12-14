@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    $('a').click(function(){
-      $('a').removeClass("active");
-      $(this).addClass("active");
-  });
-  });
+$("#navbar a").click(function() {
+    $(this).parent().addClass('selected').siblings().removeClass('selected');
+
+});

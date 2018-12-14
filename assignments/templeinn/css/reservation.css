@@ -290,5 +290,6 @@ input:focus, textarea:focus {
     text-align: center;
   }
   
-  
-  
+  .selected {
+    background: green;
+  }
