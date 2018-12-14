@@ -164,4 +164,5 @@ a:hover {
 
 .selected {
   background: green;
+  box-shadow: 0 .3em 1em #111
 }
