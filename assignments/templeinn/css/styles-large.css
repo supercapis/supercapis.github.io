@@ -1,5 +1,13 @@
 @media only screen and (min-width: 64em) {
-
+    a {
+        display: inline-block;
+        margin: 0 auto;
+        border: solid px black;
+        width:16%;
+        text-align:center;
+        text-shadow: -.5px -.5px 0 black, .5px -.5px 0 black, -.5px .5px 0 black, .5px .5px 0 black;;
+        color: white;
+      }
 .active
     {
     background-color: lightgreen;
