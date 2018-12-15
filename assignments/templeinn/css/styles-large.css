@@ -13,7 +13,15 @@
     background-color: lightgreen;
     color:#fff;
     }
-
+    
+header {
+        max-width: 800px;
+        height:175px;
+        margin: auto;
+        border:solid 1px black;
+        background-color: green;
+      }
+      
 .myselect 
     {
     text-align: center;
