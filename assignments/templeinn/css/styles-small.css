@@ -84,8 +84,6 @@ a:hover {
 }
 
 .main-page-area {
-  border-left: solid 1px black;
-  border-right: solid 1px black;
   max-width: 800px;
   height:100%;
   margin: 0 auto;
